@@ -213,28 +213,46 @@ header nav ul li{
 }
 	
 /*these are the pictures - this width was changed again from 46% to 48% from previous lesson so that they fit evenly on the screen*/
-	#featured li{
-		width: 48%;
-	}
-
-/*changed footer so that it falls into two columns aligned in center*/
-	footer ul{
-		width: 48%
-		text-align: center;
-	}
-
+#featured li{
+	width: 48%;
 }
 
-
+/*changed footer so that it falls into two columns aligned in center*/
+footer ul{
+	width: 48%
+	text-align: center;
+}
+}
 
 /*mobiles*/
 @media screen and (max width: 480px){
 /*this was changed from 400px from the previous lesson*/	
-	#featured li{
-		width: 92%;
+	
+	
+/*these are the menu pictures - this now allows a single photo with a margin all around so that it fits nicely into the small screen*/
+#featured li{
+	width: 90%;
+	margin: 20px 5%;
+}
+
+/*changed footer so that it now falls into ONE column aligned in center*/
+footer ul{
+	width: 98%;
+	text-align: center;
+}
+/*Need to change the menu to fit one item vertically so that they fit correctly, adding 30px left & right and 2% bottom and top with an !important tag to override any pseudo-class rules*/
+
+#home-menu li{
+	float: none;
+	width: 96%;
+	margin: 30px 2% !important;
+}
+
+/*Want to correct the size of the banner at top - we'e made it bigger at 180% but then offset it back over to the left and cut off a bit from left and right to center the image so that it's much bigger*/
+	#main-banner img:{
+	position: relative;
+	width: 180%
+	left: -40%	
 	}
-	
-	
-	
 }
 
