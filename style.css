@@ -186,7 +186,7 @@ footer a{
 
 /*Tablets*/
 @media screen and (max width: 768px){
-	
+/*this was changed from 700px from the previous lesson*/
 	#featured li{
 		width: 46%
 	}
@@ -195,8 +195,7 @@ footer a{
 
 /*mobiles*/
 @media screen and (max width: 480px){
-	
-	#featured li{
+/*this was changed from 400px from the previous lesson*/	#featured li{
 		width: 92%
 	}
 	
