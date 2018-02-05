@@ -188,15 +188,18 @@ footer a{
 @media screen and (max width: 768px){
 /*this was changed from 700px from the previous lesson*/
 	#featured li{
-		width: 46%
+		width: 46%;
 	}
 	
 }
 
+
 /*mobiles*/
 @media screen and (max width: 480px){
-/*this was changed from 400px from the previous lesson*/	#featured li{
-		width: 92%
+/*this was changed from 400px from the previous lesson*/	
+	#featured li{
+		width: 92%;
 	}
 	
 }
+
