@@ -184,14 +184,47 @@ footer a{
 
 /* MEDIA QUERIES */
 
-/*Tablets*/
+/*Tablets - this media query controls the breakpoint for most tablets - any screens less than 768pm will be using the following CSS changes*/
+
 @media screen and (max width: 768px){
-/*this was changed from 700px from the previous lesson*/
-	#featured li{
-		width: 46%;
-	}
 	
+/*changes the top menu to make it more responsive, drops it down a line and clears the logo on the left*/
+header nav{
+	float: none;
+	clear: left;
+	width: 100%;
 }
+/*took away the margins and padding around the button bar on the top menu*/
+header nav ul{
+	margin: 0;
+	padding: 0;
+}
+/*moved logo from left-hand side to center and removed all the margins around it*/
+h1:logo{
+	margin: 10px auto 0;
+	float: none;
+}
+/*removed padding and changed margins to 10px left and right for the buttons but nothing top or below, then gave each 20% of the width available and center-aligned them so they take up less room and look good responsively*/
+header nav ul li{
+ 	margin: 10px 0;
+	width: 20%;
+	padding: 0;
+	text-align: center;
+}
+	
+/*these are the pictures - this width was changed again from 46% to 48% from previous lesson so that they fit evenly on the screen*/
+	#featured li{
+		width: 48%;
+	}
+
+/*changed footer so that it falls into two columns aligned in center*/
+	footer ul{
+		width: 48%
+		text-align: center;
+	}
+
+}
+
 
 
 /*mobiles*/
@@ -200,6 +233,8 @@ footer a{
 	#featured li{
 		width: 92%;
 	}
+	
+	
 	
 }
 
