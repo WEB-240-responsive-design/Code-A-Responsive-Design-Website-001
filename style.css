@@ -292,14 +292,5 @@ footer ul{
 	margin: 30px 2% !important;
 }
 
-/*Want to correct the size of the banner at top - we'e made it bigger at 180% but then offset it back over to the left and cut off a bit from left and right to center the image so that it's much bigger*/
-#main-banner img:{
-	position: relative;
-	width: 180%
-	left: -40%	
-	}
-
-	
-	
 }
 
