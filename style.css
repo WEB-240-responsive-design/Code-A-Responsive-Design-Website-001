@@ -228,7 +228,51 @@ footer ul{
 @media screen and (max width: 480px){
 /*this was changed from 400px from the previous lesson*/	
 	
+/*adding CSS rules for menu icon*/	
+.burger-nav{
+	display: block;
+	height: 40px;
+	width: 100%;
+	background: url(images/burger.svg) no-repeat 98% center;
+	background-color: 
+	cursor: pointer;
+	}
+
+/* removing the padding around the banner and gets rid of little gaps on either side*/
+header .wrapper{
+	width: 100%
+	padding: 0%
+}
 	
+/* style for header navigation - will be handy for when we do the icon button so nav menu won't show by default */
+header nav ul{
+	overflow: hidden;
+	background: #505050;
+	height: 0;
+	}
+/*styling navigation*/
+header nav ul li{
+	float: none;
+	text-align: left;
+	width: 100%;
+	margin: 0;
+}	
+/*styling the links*/
+header nav ul li a{
+	color: #ffff;
+	padding: 10px;
+	border-bottom: 1px solid #404040;
+	display: block; /*automatically takes up the full width available*/
+	margin: 0;
+}		
+	
+/*Giving this ul has a class of "open", the following style will be applied*/
+header nav ul.open{
+	height: auto;
+}
+	
+
+
 /*these are the menu pictures - this now allows a single photo with a margin all around so that it fits nicely into the small screen*/
 #featured li{
 	width: 90%;
@@ -249,10 +293,13 @@ footer ul{
 }
 
 /*Want to correct the size of the banner at top - we'e made it bigger at 180% but then offset it back over to the left and cut off a bit from left and right to center the image so that it's much bigger*/
-	#main-banner img:{
+#main-banner img:{
 	position: relative;
 	width: 180%
 	left: -40%	
 	}
+
+	
+	
 }
 
