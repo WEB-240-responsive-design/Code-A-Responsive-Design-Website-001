@@ -184,10 +184,9 @@ footer a{
 
 /* MEDIA QUERIES */
 
-/*Tablets - this media query controls the breakpoint for most tablets - any screens less than 768pm will be using the following CSS changes*/
+/*Tablets - this media query controls the breakpoint for most tablets - any screens less than 768px will be using the following CSS changes*/
 
-@media screen and (max width: 768px){
-	
+@media screen and (max-width: 768px) {
 /*changes the top menu to make it more responsive, drops it down a line and clears the logo on the left*/
 header nav{
 	float: none;
@@ -219,13 +218,13 @@ header nav ul li{
 
 /*changed footer so that it falls into two columns aligned in center*/
 footer ul{
-	width: 48%
+	width: 48%;
 	text-align: center;
-}
+	}
 }
 
 /*mobiles*/
-@media screen and (max width: 480px){
+@media screen and (max-width: 480px){
 /*this was changed from 400px from the previous lesson*/	
 	
 /*adding CSS rules for menu icon*/	
@@ -234,15 +233,15 @@ footer ul{
 	height: 40px;
 	width: 100%;
 	background: url(images/burger.svg) no-repeat 98% center;
-	background-color: 
+	background-color: #404040;
 	cursor: pointer;
 	}
 
 /* removing the padding around the banner and gets rid of little gaps on either side*/
 header .wrapper{
-	width: 100%
-	padding: 0%
-}
+	width: 100%;
+	padding: 0%;
+	}
 	
 /* style for header navigation - will be handy for when we do the icon button so nav menu won't show by default */
 header nav ul{
@@ -271,8 +270,6 @@ header nav ul.open{
 	height: auto;
 }
 	
-
-
 /*these are the menu pictures - this now allows a single photo with a margin all around so that it fits nicely into the small screen*/
 #featured li{
 	width: 90%;
